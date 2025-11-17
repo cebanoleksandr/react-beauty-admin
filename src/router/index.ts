@@ -9,6 +9,8 @@ import SettingsPage from "../pages/SettingsPage";
 import ServicesPage from "../pages/ServicesPage";
 import AnalyticsPage from "../pages/AnalyticsPage";
 import MaterialesPage from "../pages/MaterialesPage";
+import LoginPage from "../pages/LoginPage";
+import RegisterPage from "../pages/RegisterPage";
 
 export const routes: RouteObject[] = [
   {
@@ -23,6 +25,8 @@ export const routes: RouteObject[] = [
       { path: '/services', Component: ServicesPage },
       { path: '/analytics', Component: AnalyticsPage },
       { path: '/materiales', Component: MaterialesPage },
+      { path: '/login', Component: LoginPage },
+      { path: '/register', Component: RegisterPage },
       { path: "*", Component: NotFoundPage },
     ],
   },

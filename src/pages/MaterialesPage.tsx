@@ -1,6 +1,8 @@
+import MainLayout from "../components/layouts/MainLayout";
+
 const MaterialesPage = () => {
   return (
-    <div>
+    <MainLayout>
       <h1>(Часто це розширений, але дуже корисний модуль)</h1>
 
       <ul>
@@ -9,7 +11,7 @@ const MaterialesPage = () => {
         <li>Сповіщення: Попередження, коли товар закінчується.</li>
         <li>Списання: Автоматичне списання матеріалів при наданні послуги (наприклад, -50 мл фарби).</li>
       </ul>
-    </div>
+    </MainLayout>
   );
 };
 

@@ -1,6 +1,8 @@
+import MainLayout from "../components/layouts/MainLayout";
+
 const HomePage = () => {
   return (
-    <div>
+    <MainLayout>
       <p>Це перша сторінка, яку бачить адміністратор. Вона має показувати "пульс" салону:</p>
 
       <ul>
@@ -9,7 +11,7 @@ const HomePage = () => {
         <li>Швидкі дії: Кнопки "Створити запис", "Додати клієнта".</li>
         <li>Останні сповіщення: Наприклад, про скасування запису або низький залишок товару.</li>
       </ul>
-    </div>
+    </MainLayout>
   );
 };
 

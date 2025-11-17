@@ -1,6 +1,8 @@
+import MainLayout from "../components/layouts/MainLayout";
+
 const ClientsPage = () => {
   return (
-    <div>
+    <MainLayout>
       <p>Ваша клієнтська база (CRM).</p>
 
       <ul>
@@ -12,7 +14,7 @@ const ClientsPage = () => {
           <li>Нотатки: Важлива інформація (напр., "алергія на латекс", "завжди пропонувати каву").</li>
         </ul>
       </ul>
-    </div>
+    </MainLayout>
   );
 };
 

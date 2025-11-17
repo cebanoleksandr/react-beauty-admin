@@ -1,6 +1,8 @@
+import MainLayout from "../components/layouts/MainLayout";
+
 const ServicesPage = () => {
   return (
-    <div>
+    <MainLayout>
       <h1>Ваш прайс-лист.</h1>
       <ul>
         <li>Список всіх послуг: Згрупований за категоріями (напр., "Манікюр", "Стрижки", "Косметологія").</li>
@@ -12,7 +14,7 @@ const ServicesPage = () => {
           <li>Які майстри можуть виконувати цю послугу.</li>
         </ul>
       </ul>
-    </div>
+    </MainLayout>
   );
 };
 

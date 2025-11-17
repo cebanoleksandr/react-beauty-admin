@@ -1,6 +1,8 @@
+import MainLayout from "../components/layouts/MainLayout";
+
 const SettingsPage = () => {
   return (
-    <div>
+    <MainLayout>
       <h1>Загальні налаштування салону та програми.</h1>
       
       <ul>
@@ -8,7 +10,7 @@ const SettingsPage = () => {
         <li>Управління користувачами: Хто має доступ до адмін-панелі (наприклад, Адміністратор, Власник, Майстер — з різними правами).</li>
         <li>Налаштування сповіщень: Шаблони SMS або email-нагадувань для клієнтів.</li>
       </ul>
-    </div>
+    </MainLayout>
   );
 };
 

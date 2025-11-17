@@ -1,6 +1,8 @@
+import MainLayout from "../components/layouts/MainLayout";
+
 const StaffPage = () => {
   return (
-    <div>
+    <MainLayout>
       <h1>Управління вашою командою.</h1>
 
       <ul>
@@ -13,7 +15,7 @@ const StaffPage = () => {
         </ul>
         <li>Розрахунок зарплати: (Розширений функціонал) Автоматичний розрахунок відсотка від наданих послуг.</li>
       </ul>
-    </div>
+    </MainLayout>
   );
 };
 

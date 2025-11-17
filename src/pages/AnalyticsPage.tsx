@@ -1,6 +1,8 @@
+import MainLayout from "../components/layouts/MainLayout";
+
 const AnalyticsPage = () => {
   return (
-    <div>
+    <MainLayout>
       <h1>Допомагає зрозуміти, як працює бізнес.</h1>
 
       <ul>
@@ -9,7 +11,7 @@ const AnalyticsPage = () => {
         <li>Звіт по майстрах: Хто з майстрів приносить найбільше доходу, у кого найбільша завантаженість.</li>
         <li>Звіт по клієнтах: LTV (життєва цінність клієнта), коефіцієнт утримання.</li>
       </ul>
-    </div>
+    </MainLayout>
   );
 };
 
