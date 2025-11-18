@@ -9,7 +9,7 @@ interface IProps {
 
 const MainLayout: FC<IProps> = ({ children }) => {
   return (
-    <div className='flex min-h-screen w-full bg-gray-100'>
+    <div className='flex min-h-screen w-full bg-blue-50'>
       <div className='hidden md:block md:w-52 md:shrink-0'>
         <Sidebar />
       </div>

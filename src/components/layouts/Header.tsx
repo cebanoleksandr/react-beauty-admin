@@ -4,6 +4,8 @@ import {
   Bars3Icon,
   MagnifyingGlassIcon,
 } from '@heroicons/react/24/solid';
+import Input from '../UI/Input';
+import Button from '../UI/Button';
 
 const Header = () => {
   const [isLogoutPopupVisible, setIsLogoutPopupVisible] = useState(false);
@@ -16,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <header className='fixed left-0 md:left-52 right-0 top-0 z-10 py-4 px-10 flex items-center justify-between bg-gray-100'>
+    <header className='fixed left-0 md:left-52 right-0 top-0 z-10 py-4 px-10 flex items-center justify-between bg-blue-50'>
       <div className="flex items-center w-full">
         <Bars3Icon
           className="size-10 mr-3 text-gray-600 cursor-pointer md:hidden"
@@ -25,9 +27,9 @@ const Header = () => {
 
         <div className='block md:flex items-center gap-2 w-full'>
           <span className='relative'>
-            {/* <Input placeholder='Search...' className='md:w-80 px-9' />
-            <MagnifyingGlassIcon className="size-5 absolute top-1/2 left-3 -translate-y-1/2 text-gray-400" /> */}
-            {/*
+            <Input placeholder='Пошук...' className='md:w-80 px-9' />
+            <MagnifyingGlassIcon className="size-5 absolute top-1/2 left-3 -translate-y-1/2 text-gray-400" />
+            {/*             
               {!!query && (
                 <XCircleIcon
                   className='size-4 absolute text-primary-dark top-1/2 right-3 -translate-y-1/2
@@ -41,7 +43,7 @@ const Header = () => {
       </div>
 
       <div className='hidden md:flex items-center gap-8'>
-        {/* <BaseButton
+        <Button
           onClick={() => setIsLogoutPopupVisible(true)}
           mode="primary"
         >
@@ -49,7 +51,7 @@ const Header = () => {
             <ArrowDownOnSquareIcon className="size-5 text-white" />
             Logout
           </div>
-        </BaseButton> */}
+        </Button>
       </div>
 
       {/* <LogoutPopup
