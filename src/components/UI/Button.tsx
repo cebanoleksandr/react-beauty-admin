@@ -1,7 +1,7 @@
-import { type FC, type HTMLAttributes, useMemo } from 'react';
+import { type ButtonHTMLAttributes, type FC, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 
-interface IProps extends HTMLAttributes<HTMLButtonElement> {
+interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   link?: boolean;
   to?: string;
   mode?: 'success' | 'error' | 'warning' | 'primary' | '';
