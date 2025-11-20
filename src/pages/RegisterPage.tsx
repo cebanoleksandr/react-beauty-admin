@@ -45,7 +45,7 @@ const RegisterPage = () => {
       const response = await register({ email, password });
       const { accessToken, admin } = response;
 
-      localStorage.setItem('token', accessToken);
+      localStorage.setItem('token-admin', accessToken);
       dispatch(setUserAC(admin));
 
       dispatch(setAlertAC({

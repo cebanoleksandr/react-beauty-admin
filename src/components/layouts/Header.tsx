@@ -6,15 +6,23 @@ import {
 } from '@heroicons/react/24/solid';
 import Input from '../UI/Input';
 import Button from '../UI/Button';
+import LogoutPopup from '../popups/LogoutPopup';
+import { useAppDispatch } from '../../storage/hooks';
+import { removeUserAC } from '../../storage/adminSlice';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [isLogoutPopupVisible, setIsLogoutPopupVisible] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const dispatch = useAppDispatch();
+  const navigate = useNavigate();
+
   const handleUserLogout = () => {
     setIsLogoutPopupVisible(false);
-
-    // todo logic
+    localStorage.setItem('token-admin', '');
+    dispatch(removeUserAC());
+    navigate('/login');
   };
 
   return (
@@ -54,13 +62,13 @@ const Header = () => {
         </Button>
       </div>
 
-      {/* <LogoutPopup
+      <LogoutPopup
         isVisible={isLogoutPopupVisible}
         onClose={() => setIsLogoutPopupVisible(false)}
         onLogout={handleUserLogout}
       />
 
-      <MobileMenu
+      {/* <MobileMenu
         isOpen={isMobileMenuOpen}
         onClose={() => setIsMobileMenuOpen(false)}
       /> */}
