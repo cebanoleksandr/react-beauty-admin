@@ -10,6 +10,7 @@ import LogoutPopup from '../popups/LogoutPopup';
 import { useAppDispatch } from '../../storage/hooks';
 import { removeUserAC } from '../../storage/adminSlice';
 import { useNavigate } from 'react-router-dom';
+import MobileMenu from './MobileMenu';
 
 const Header = () => {
   const [isLogoutPopupVisible, setIsLogoutPopupVisible] = useState(false);
@@ -68,10 +69,10 @@ const Header = () => {
         onLogout={handleUserLogout}
       />
 
-      {/* <MobileMenu
+      <MobileMenu
         isOpen={isMobileMenuOpen}
         onClose={() => setIsMobileMenuOpen(false)}
-      /> */}
+      />
     </header>
   );
 };
