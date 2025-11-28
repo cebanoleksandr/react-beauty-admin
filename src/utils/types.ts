@@ -14,12 +14,12 @@ export type UpdateAdmin = {
   contacts?: IContact;
 }
 
-export type GetAllAppointmentsDTO = { 
-  masterId?: string; 
-  clientId?: string; 
-  serviceId?: string; 
-  status?: string; 
-  startTime?: string 
+export type GetAllAppointmentsDTO = {
+  masterId?: string;
+  clientId?: string;
+  serviceId?: string;
+  status?: string;
+  startTime?: string
 }
 
 export type CreateAppointmentDTO = {
@@ -40,6 +40,22 @@ export type UpdateAppointmentDTO = {
   status?: Status;
   finalPrice?: number;
   notes?: string;
+}
+
+export type CreateMasterScheduleDTO = {
+  dayOfWeek: number;
+  masterId: string;
+  startTime: string;
+  endTime: string;
+  isAvailable: boolean;
+}
+
+export type UpdateMasterScheduleDTO = {
+  dayOfWeek?: number;
+  masterId?: string;
+  startTime?: string;
+  endTime?: string;
+  isAvailable?: boolean;
 }
 
 export type Status = 'BOOKED' | 'CONFIRMED' | 'COMPLETED' | 'CANCELED';

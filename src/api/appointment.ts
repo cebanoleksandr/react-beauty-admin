@@ -17,7 +17,7 @@ export const createAppointment = async (appointmentData: CreateAppointmentDTO) =
 }
 
 export const updateAppointment = async (id: string, appointmentData: UpdateAppointmentDTO) => {
-  const response = await httpPrivate.put(`/appointments/${id}`, appointmentData);
+  const response = await httpPrivate.patch(`/appointments/${id}`, appointmentData);
   return response.data;
 }
 
