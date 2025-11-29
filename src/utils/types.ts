@@ -58,4 +58,18 @@ export type UpdateMasterScheduleDTO = {
   isAvailable?: boolean;
 }
 
+export type CreateMaterialDTO = { 
+  title: string;
+  quantity: number;
+  unit: string;
+  lowStockThreshold: number;
+}
+
+export type UpdateMaterialDTO = { 
+  title?: string;
+  quantity?: number;
+  unit?: string;
+  lowStockThreshold?: number;
+}
+
 export type Status = 'BOOKED' | 'CONFIRMED' | 'COMPLETED' | 'CANCELED';
