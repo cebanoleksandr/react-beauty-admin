@@ -72,4 +72,18 @@ export type UpdateMaterialDTO = {
   lowStockThreshold?: number;
 }
 
+export type CreateScheduleExceptionDTO = {
+  title: string;
+  price: number;
+  duration_minutes: number;
+  masterIds: string[];
+}
+
+export type UpdateScheduleExceptionDTO = {
+  title?: string;
+  price?: number;
+  duration_minutes?: number;
+  masterIds?: string[];
+}
+
 export type Status = 'BOOKED' | 'CONFIRMED' | 'COMPLETED' | 'CANCELED';
