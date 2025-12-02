@@ -86,4 +86,18 @@ export type UpdateScheduleExceptionDTO = {
   masterIds?: string[];
 }
 
+export type CreateServiceDTO = {
+  title: string;
+  price: number;
+  duration_minutes: number;
+  masterIds: string[];
+}
+
+export type UpdateServiceDTO = {
+  title?: string;
+  price?: number;
+  duration_minutes?: number;
+  masterIds?: string[];
+}
+
 export type Status = 'BOOKED' | 'CONFIRMED' | 'COMPLETED' | 'CANCELED';
