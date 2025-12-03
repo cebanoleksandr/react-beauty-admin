@@ -17,3 +17,13 @@ export interface IContact {
   telegram: string | null;
   facebook: string | null;
 }
+
+export interface IService {
+  id: string;
+  title: string;
+  masterIds: string[];
+  duration_minutes: number;
+  price: number;
+  createdAt: string;
+  updatedAt: string;
+}

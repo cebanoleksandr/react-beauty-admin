@@ -1,7 +1,7 @@
 import type { CreateServiceDTO, UpdateServiceDTO } from "../utils/types";
 import { httpPrivate } from "./index";
 
-export const getAllServices = async ({ query, masterId }: { query: string; masterId: string }) => {
+export const getAllServices = async ({ query, masterId }: { query?: string; masterId?: string }) => {
   const response = await httpPrivate.get('/services', { params: { query, masterId } });
   return response.data;
 };
