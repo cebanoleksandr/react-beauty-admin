@@ -1,7 +1,7 @@
 import type { UpdateAdmin } from "../utils/types";
 import { httpPrivate } from "./index";
 
-export const getAllAdmins = async ({ query }: { query: string }) => {
+export const getAllAdmins = async ({ query }: { query?: string }) => {
   const response = await httpPrivate.get('/admins', { params: { query } });
   return response.data;
 }

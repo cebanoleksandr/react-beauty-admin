@@ -89,6 +89,7 @@ export type UpdateScheduleExceptionDTO = {
 export type CreateServiceDTO = {
   title: string;
   price: number;
+  imageUrl: string | null;
   duration_minutes: number;
   masterIds: string[];
 }
@@ -96,6 +97,7 @@ export type CreateServiceDTO = {
 export type UpdateServiceDTO = {
   title?: string;
   price?: number;
+  imageUrl?: string | null;
   duration_minutes?: number;
   masterIds?: string[];
 }
